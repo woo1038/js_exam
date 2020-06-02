@@ -2,10 +2,19 @@ body {
     margin: 0;
     padding: 0;
 }
+#nav {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background: #fff;
+}
 #long {
+    position: absolute;
+    top: 0;
     width: 100vw;
-    height: 6400px;
-    background-color: rgb(24, 20, 255);
+    height: 6300px;
+    background-color: rgb(255, 20, 20);
     display: block;
     
 }
