@@ -16,17 +16,22 @@
 
         <div class="inner">
             <div class="summary">
-                <button id="btn_play">실행</button>
-                <button id="btn_pause">일시정지</button>
-                <button id="btn_stop">정지</button>
-                <button id="btn_mute">음소거</button>
-                <button id="btn_vm">볼륨있음</button>
-                <input id="volumeslider" type="range" min="0" max="10" value="10" step="0">
-                <button id="btn_vmup">볼륨업</button>
-                <button id="btn_vmdown">볼륨다운</button>
-                <button id="btn_fullscreen">전체화면</button>
-                <div id="current_time">00:00</div>
-                <div id="total_time">00:00</div>
+                <div class="left">
+                    <button id="btn_play">실행</button>
+                    <button id="btn_pause">일시정지</button>
+                    <div id="current_time">00:00</div>
+                    <div class="slide">/</div>
+                    <div id="total_time">00:00</div>
+                    <button id="btn_stop">정지</button>
+                </div>
+                <div class="right">
+                    <button id="btn_mute">음소거</button>
+                    <button id="btn_vm">볼륨있음</button>
+                    <input id="volumeslider" type="range" min="0" max="10" value="10" step="0">
+                    <button id="btn_vmdown">볼륨다운</button>
+                    <button id="btn_vmup">볼륨업</button>
+                    <button id="btn_fullscreen">전체화면</button>
+                </div>
             </div>
             <div id="progress" style="width:100%">
                 <div id="bar" style="width:0%"></div>

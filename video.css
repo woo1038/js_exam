@@ -1,36 +1,53 @@
+/* ===== 초기화 ===== */
+* {
+    color: #fff;
+}
 body {
     margin: 0;
     padding: 0;
-}
-
-
-section {
-    width: 100%;
-    height: 500px;
-    background: tomato;
-}
-
-#video {
-    width: 100%;
-    height: 90%;
-    background: violet;
-}
-
-.inner {
-    position: relative;
-    width: 100%;
-    height: 10%;
-    margin: 0;
-    background: #5a5a55;
-}
-.summary {
-    position: absolute;
-    top: 10px;
 }
 button {
     width: 70px;
     height: 40px;
     background: none;
+    border: none;
+    cursor: pointer;
+}
+section {
+    width: 100%;
+    height: 500px;
+    background: rgb(0, 0, 0);
+}
+
+
+/* ===== video ===== */
+#video {
+    width: 100%;
+    height: 90%;
+    background: rgb(0, 0, 0);
+}
+
+/* bottom button line */
+.inner {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    background: #000000;
+}
+
+/* bottom button left */
+.summary {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    width: 100%;
+}
+.left {
+    width: 49.5%;
+    margin-left: 0.5%;
+    display: flex;
+
 }
 #btn_play {
     display: inline-block;
@@ -38,8 +55,19 @@ button {
 #btn_pause {
     display: none;
 }
-#btn_stop {
+#current_time, .slide, #total_time {
+    margin: 0 3px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
 
+
+/* bottom button right */
+.right {
+    margin-right: 1%;
+    width: 49%;
+    text-align: right;
 }
 #btn_mute {
     display: inline-block;
@@ -47,28 +75,14 @@ button {
 #btn_vm {
     display: none;
 }
-#btn_vmup {
-
-}
-#btn_vmdown {
-
-}
-#btn_fullscreen {
-
-}
-#current_time {
-
-}
-#total_time {
-
-}
 #progress {
     position: absolute;
     top: 0;
-    height: 10px;
-    background: green;
+    height: 7px;
+    cursor: pointer;
+    background: rgb(163, 163, 163);
 }
 #bar {
-    height: 10px;
-    background: greenyellow;
+    height: 7px;
+    background: rgba(255, 217, 0, 0.801);
 }

@@ -189,15 +189,15 @@ $vm.addEventListener('click', soundPlayer);
 $volumeslider.addEventListener('change', setvolume);
 
 
-// 볼륨 업
-$vmup.addEventListener('click', function() {
-    soundUpDown('UP');
-});
-
-
 // 볼륨 다운
 $vmdown.addEventListener('click', function() {
     soundUpDown('DOWN');
+});
+
+
+// 볼륨 업
+$vmup.addEventListener('click', function() {
+    soundUpDown('UP');
 });
 
 
